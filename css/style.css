@@ -72,3 +72,19 @@ img{
 .centrar-texto{
   text-align: center;
 }
+
+/** Header  */
+
+.header{
+  background-image: url(../img/banner.jpg);
+  height: 60rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; /*? Cuando se especifica center center,se está indicando que el fondo debe estar centrado tanto horizontal como verticalmente.  */
+}
+
+.header__texto{
+  text-align: center;
+  color: var(--blanco);
+  margin-top: 5rem;
+}
