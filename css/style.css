@@ -28,7 +28,7 @@ body {
 /** Globales **/
 
 .contenedor {
-  min-width:(90%, 120rem);
+  width:min(90%, 120rem);
   margin: 0 auto;
 }
 
@@ -95,7 +95,7 @@ img {
   color: var(--blanco);
   margin-top: 5rem;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
 }
 
 @media  (min-width: 768PX) {
@@ -114,7 +114,6 @@ img {
 
 .barra{
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
-      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
 }
 .logo {
   color: var(--blanco);
@@ -128,6 +127,9 @@ img {
 .logo__bold {
   font-weight: 700;
 }
+span{
+  color: var(--oscuro);
+}
 
 @media  (min-width: 768px) {    
     .navegacion{
@@ -138,6 +140,7 @@ img {
 
 .navegacion__enlace{
   display: block;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: var(--blanco);
+  font-weight: 700;
 }
