@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>My Blog</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,28 +14,76 @@
 </head>
 
 <body>
-<header class="header">
+  <header class="header">
 
-  <div class="contenedor">
-    <div class="barra">
-      <a class="logo" href="index.html">
-        <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">mataPRO</span></h1>
-      </a>
+    <div class="contenedor">
+      <div class="barra">
+        <a class="logo" href="index.html">
+          <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">mataPRO</span></h1>
+        </a>
 
-      <nav class="navegacion centrar-texto">
-        <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
-        <a href="cursos.html" class="navegacion__enlace">Cursos</a>
-        <a href="contacto.html" class="navegacion__enlace">Contacto</a>
-      </nav>
+        <nav class="navegacion centrar-texto">
+          <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+          <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+          <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+        </nav>
+      </div>
     </div>
-  </div>
 
-  <div class="header__texto">
-    <h2 class="no-margin">Blog de Tecnología y Tips</h2>
-    <p class="no-margin">Descubre lo último en tecnología con nosotros</p>
-  </div>
-</header>
+    <div class="header__texto">
+      <h2 class="no-margin">Blog de Tecnología y Tips</h2>
+      <p class="no-margin">Descubre lo último en tecnología con nosotros</p>
+    </div>
+  </header>
 
+  <div class="contenedor contenido-principal">
+    <main class="blog">
+      <h3>Nuestro BLog</h3>
+
+      <article class="entrada">
+        <div class="entrada__imagen">
+          <img src="img/blog1.jpg" alt="imagen de blog">
+        </div>
+        <div class="entrada__contenido">
+          <h4>Hablos sobre Git</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, odio laborum cupiditate architecto
+            voluptate repellendus ut vero, iusto reiciendis harum consequuntur libero error esse, porro ullam itaque a.
+            Illum, tempore.</p>
+          <a href="entrada.html" class="boton boton--primario">Leer entrada</a>
+        </div>
+      </article>
+
+      <article class="entrada">
+        <div class="entrada__imagen">
+          <img src="img/blog2.jpg" alt="imagen de blog">
+        </div>
+        <div class="entrada__contenido">
+          <h4>Hablos sobre Tesla</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, odio laborum cupiditate architecto
+            voluptate repellendus ut vero, iusto reiciendis harum consequuntur libero error esse, porro ullam itaque a.
+            Illum, tempore.</p>
+          <a href="entrada.html" class="boton boton--primario">Leer entrada</a>
+        </div>
+      </article>
+
+      <article class="entrada">
+        <div class="entrada__imagen">
+          <img src="img/blog3.jpg" alt="imagen de blog">
+        </div>
+        <div class="entrada__contenido">
+          <h4>Hablos sobre Iphone</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, odio laborum cupiditate architecto
+            voluptate repellendus ut vero, iusto reiciendis harum consequuntur libero error esse, porro ullam itaque a.
+            Illum, tempore.</p>
+          <a href="entrada.html" class="boton boton--primario">Leer entrada</a>
+        </div>
+      </article>
+    </main>
+    <aside class="sidebar">
+      <h3>Nuestros Cursos y talleres</h3>
+    </aside>
+
+  </div>
 </body>
 
 </html>
