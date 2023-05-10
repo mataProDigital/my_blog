@@ -29,7 +29,7 @@ body {
 /** Globales **/
 
 .contenedor {
-  /*! Es lo mimo que aplicar width: min  */
+  /** Es lo mimo que aplicar width: min  */
 /*   max-width: 120rem;
   width: 90%; */
   width: min(90%, 120rem);
@@ -224,3 +224,36 @@ font-weight: 400;
   padding-bottom: 3rem ;
   margin-top: 4rem;
 }
+
+/* sobre nosotros */
+
+@media  (min-width: 768px) {
+
+  /** con flexbox */
+    /* .sobre-nosotros{
+      display: flex;
+      gap: 2rem;
+    }
+    .sobre-nosotros__imagen,
+    .sobre-nosotros__texto{
+      flex-basis: 50%;
+    } */
+
+    /** forma antigua  */
+    /* .sobre-nosotros{
+      display: flex;
+      justify-content: space-between;
+    } 
+    .sobre-nosotros__texto{
+      flex: 0 0 calc(50% - 1rem);
+    }
+    .sobre-nosotros__imagen{
+      flex: 0 0 calc(50% - 1rem);
+    } */
+
+    .sobre-nosotros{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      column-gap: 2rem;
+    }
+} 
