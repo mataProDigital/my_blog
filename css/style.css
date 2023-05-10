@@ -29,6 +29,9 @@ body {
 /** Globales **/
 
 .contenedor {
+  /*! Es lo mimo que aplicar width: min  */
+/*   max-width: 120rem;
+  width: 90%; */
   width: min(90%, 120rem);
   margin: 0 auto;
 }
@@ -100,8 +103,12 @@ img {
 
 @media (min-width: 768PX) {
   .header__texto {
-    margin-top: 15rem;
+    padding-top: ;: 15rem;
   }
+}
+
+.barra{
+padding-top: 4rem;
 }
 
 @media (min-width: 768px) {
@@ -109,6 +116,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
   }
 }
 
@@ -209,4 +217,10 @@ font-weight: 400;
 .widget-curso__label,
 .widget-curso__info{
   font-size: 2rem;
+}
+
+.footer{
+  background-color: var(--oscuro);
+  padding-bottom: 3rem ;
+  margin-top: 4rem;
 }
