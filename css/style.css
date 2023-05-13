@@ -303,3 +303,12 @@ span {
 .curso__info {
   font-size: 2rem;
 }
+
+/* *CONTACTO */
+.contacto-bg{
+  background-image: url(../img/fondo_contac.jpg);
+  height: 40rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
