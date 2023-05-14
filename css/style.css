@@ -105,7 +105,7 @@ img {
 
 @media (min-width: 768PX) {
   .header__texto {
-    padding-top:15rem;
+    padding-top: 15rem;
   }
 }
 
@@ -165,9 +165,10 @@ span {
 }
 
 .entrada__contenido,
-.widget-curso{
+.widget-curso {
   color: var(--texto);
 }
+
 .entrada {
   border-bottom: 5px double var(--texto);
   margin-bottom: 2rem;
@@ -189,12 +190,17 @@ span {
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 2rem;
+  border: none;
 }
 
 @media (min-width: 768px) {
   .boton {
     display: inline-block;
   }
+}
+
+.boton:hover {
+  cursor: pointer;
 }
 
 .boton--primario {
@@ -273,20 +279,20 @@ span {
 }
 
 /* *cursos */
-.curso{
+.curso {
   padding: 3rem 0;
   border-bottom: 1px solid var(--secundario);
 }
 
-@media  (min-width: 768px) {
-    .curso{
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      column-gap: 2rem;
-    }
+@media (min-width: 768px) {
+  .curso {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
+  }
 }
 
-.curso:last-of-type{
+.curso:last-of-type {
   border: none;
 }
 
@@ -305,10 +311,46 @@ span {
 }
 
 /* *CONTACTO */
-.contacto-bg{
+.contacto-bg {
   background-image: url(../img/fondo_contac.jpg);
   height: 40rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.formulario {
+  background-color: #fff;
+  margin: -5rem auto 0 auto;
+  width: 95%;
+  padding: 5rem;
+}
+
+
+.campo {
+  display: flex;
+  /*Establece que los elementos dentro del campo serán posicionados en un flex-container*/
+  margin-bottom: 2rem;
+  /*Establece el margen inferior entre campos*/
+}
+
+.campo__label {
+  flex: 0 0 9rem;
+  /*Establece que el ancho de la etiqueta del campo será de 9 unidades (en este caso, rem)*/
+  text-align: right;
+  /*Establece que el texto dentro de la etiqueta del campo se alineará a la derecha*/
+  padding-right: 2rem;
+  /*Agrega un relleno (padding) de 2 unidades (en este caso, rem) al lado derecho de la etiqueta del campo*/
+}
+
+.campo__field {
+  flex: 1;
+  /*Establece que el ancho del campo de entrada se expandirá para llenar el espacio restante del contenedor*/
+  border: 1px solid var(--secundario);
+  /*Establece un borde de 1 píxel con un color variable definido en otro lugar del código*/
+}
+
+.campo__field--textarea {
+  height: 20rem;
+  /*Establece la altura del campo de entrada de texto en 20 unidades (en este caso, rem)*/
 }
