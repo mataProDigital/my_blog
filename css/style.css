@@ -86,6 +86,12 @@ img {
 
 /** Header  */
 
+/* .webp .header {
+  background-image: url(../img/code.webp);
+}
+.no-webp .header {
+  background-image: url(../img/code.jpg);
+} */
 .header {
   background-image: url(../img/code.jpg);
   height: 60rem;
